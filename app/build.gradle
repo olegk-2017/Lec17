@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.oleg.lec17'
-    compileSdk 33
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.oleg.lec17"
         minSdk 23
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -57,8 +57,11 @@ dependencies {
 
     implementation 'com.google.devtools.ksp:symbol-processing-api:1.7.22-1.0.8'
 
+    implementation "androidx.room:room-ktx:$room_version"
 
-    implementation 'androidx.core:core-ktx:1.9.0'
+
+
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
