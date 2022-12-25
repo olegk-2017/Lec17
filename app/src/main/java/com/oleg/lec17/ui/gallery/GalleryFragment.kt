@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.oleg.lec17.MoviesApplication
 import com.oleg.lec17.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
@@ -24,6 +25,10 @@ class GalleryFragment : Fragment() {
     ): View {
         val galleryViewModel =
             ViewModelProvider(this).get(GalleryViewModel::class.java)
+
+//        if(MoviesApplication.networkStatusChecker.hasInternet()){
+//
+//        }
 
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root

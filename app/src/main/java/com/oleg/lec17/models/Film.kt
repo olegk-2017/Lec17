@@ -8,7 +8,7 @@ import java.util.*
 data class Film(
     val title: String,
     @PrimaryKey
-    val id: String = UUID.randomUUID().toString()
+    val filmId: String = UUID.randomUUID().toString()
 )
 
 //many to many
